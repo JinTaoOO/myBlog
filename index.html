@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        #penal {
+            width: 800px;
+            height: 800px;
+        }
+        #bg{
+            width: 800px;
+            height: 800px;
+            background: #cccccc;
+            /* position: relative; */
+        }
+        #xz {
+            width: 0;
+            height: 0;
+            background: rgba(69, 137, 224,.3);
+            overflow: hidden;
+            position: absolute;
+            top:0;
+            left: 0;
+            z-index: 999999;
+        }
+    </style>
+    <script src="./huaban.js"></script>
+</head>
+<body>
+    <div id="select">
+        <button id="pen">铅笔</button>
+        <button id="line">直线</button>
+        <button id="rect">矩形</button>
+        <button id="arc">圆形</button>
+        <button id="robber">橡皮檫</button>
+        <button id="img">图片</button>
+        <button id="save">保存</button>
+        <button id="move">剪切</button>
+        <input type="file" id="file" name="img" style="display: none"/>
+        <input type="color" id="color"/>
+        <input type="number" id="lineWidth"/>
+    </div>
+    <!--<canvas id="big" width="800" height="800">-->
+
+
+    <div id="bg">
+        <div id="xz">选取后 谁便点个地方剪贴</div>
+        <canvas id="penal" width="800" height="800"></canvas>
+    </div>
+    <img src="" alt="">
+    <!--</canvas>-->
+</body>
+</html>
